@@ -1,0 +1,16 @@
+ul {
+  background-color: #0d4a0d;
+}
+
+ul li a {
+  color: white;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+
+li {
+    font-family: courier;
+    font-size: 1.5rem;
+}
