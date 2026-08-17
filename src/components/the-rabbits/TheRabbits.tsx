@@ -13,7 +13,7 @@ const BackgroundImage = () => {
 
   return (
     <div
-      className="absolute w-[10%] h-[10%] opacity-50"
+      className="absolute w-[5%] h-[5%] opacity-50"
       style={{ top: `${position.top}%`, left: `${position.left}%` }}
     >
       <img src={image} alt="Background" className="w-full h-full object-contain" />
