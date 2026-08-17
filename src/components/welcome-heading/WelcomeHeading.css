@@ -16,15 +16,15 @@ animation: wave 2s ease-in-out infinite;
 .wavy-text span:nth-child(9) { animation-delay: 1.4s;}
 .wavy-text span:nth-child(10) { animation-delay: 1.6s;}
 
-/* Tooth */
+/* Rabbit */
 .wavy-text span:nth-child(12) { animation-delay: 1.8s;}
 .wavy-text span:nth-child(13) { animation-delay: 2.0s;}
 .wavy-text span:nth-child(14) { animation-delay: 2.2s;}
 .wavy-text span:nth-child(15) { animation-delay: 2.4s;}
 .wavy-text span:nth-child(16) { animation-delay: 2.6s;}
+.wavy-text span:nth-child(17) { animation-delay: 2.8s;}
 
-/* Rabbit */
-.wavy-text span:nth-child(18) { animation-delay: 2.8s;}
+/* Tooth */
 .wavy-text span:nth-child(19) { animation-delay: 3.0s;}
 .wavy-text span:nth-child(20) { animation-delay: 3.2s;}
 .wavy-text span:nth-child(21) { animation-delay: 3.4s;}

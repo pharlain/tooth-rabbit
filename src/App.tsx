@@ -19,13 +19,13 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <TheRabbits />
         <div className="relative w-screen h-screen">
+          <TheRabbits />
           <WelcomeHeading />
           <Navbar />
-          <div className="bg-blue-500">
-            <div className="flex w-[70%] h-screen justify-center mx-auto border-x-12 border-blue-500 bg-white border-dashed">
-              <div className="p-8">
+          <div className="bg-blue-500 h-full">
+            <div className="flex w-[70%] h-full justify-center mx-auto border-x-12 border-blue-500 bg-white border-dashed">
+              <div className="p-8 min-w-0 w-full h-full">
                 <main>
                   <Routes>
                     <Route path="/" element={<Home />} />
