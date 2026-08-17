@@ -6,7 +6,7 @@ const Home = () => {
     <>
       <PageHeader title="Rabbit Tooth" />
       <div className="text-center">
-        <p className="text-xl">
+        <p className="text-md md:text-xl">
           We are a 4 piece from Belfast. Go Wildcats.
         </p>
         <div className="w-[50%] h-auto mx-auto">
