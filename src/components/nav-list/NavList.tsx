@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 const desktopStyle = "flex h-full items-center justify-center p-2 text-[0.75rem] md:text-[1rem] lg:text-[1.25rem]";
-const mobileStyle = "flex items-center justify-center p-2 text-l";
+const mobileStyle = "flex items-center justify-center p-2 text-xl";
 
 const NavList = ({ mobile = false }: { mobile?: boolean }) => {
     const linkClass = mobile ? mobileStyle : desktopStyle;
