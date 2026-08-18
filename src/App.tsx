@@ -19,14 +19,14 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <div className="relative w-screen min-h-screen">
+        <div className="relative w-screen min-h-screen flex flex-col">
           <TheRabbits />
           <div className="flex flex-col w-full">
             <WelcomeHeading />
             <Navbar />
           </div>
-          <div className="bg-blue-500 h-screen">
-            <div className="flex w-[70%] h-full justify-center mx-auto border-x-12 border-t-12 border-blue-500 bg-white border-dashed">
+          <div className="bg-blue-500 flex-1 flex">
+            <div className="flex w-[80%] md:w-[70%] justify-center mx-auto border-x-12 border-t-12 border-blue-500 bg-white border-dashed">
               <div className="p-8 min-w-0 w-full h-full">
                 <main>
                   <Routes>
