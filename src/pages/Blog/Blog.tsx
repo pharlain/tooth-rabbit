@@ -8,7 +8,7 @@ const Blog = () => {
             <PageHeader title="Blog" />
             <div className="w-full min-w-0 mx-auto">
                 {blogs.map((blog) => (
-                    <div key={blog.id} className="post-preview">
+                    <div key={blog.id}>
                         <p>{blog.date.toLocaleDateString()}</p>
                         <h2 className="text-3xl font-bold mb-4 mt-6">{blog.title}</h2>
                         <ReactMarkdown components={{

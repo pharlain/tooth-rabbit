@@ -25,9 +25,9 @@ function App() {
             <WelcomeHeading />
             <Navbar />
           </div>
-          <div className="bg-blue-500 min-h-full">
-            <div className="flex w-[70%] min-h-full justify-center mx-auto border-x-12 border-t-12 border-blue-500 bg-white border-dashed">
-              <div className="p-8 min-w-0 w-full min-h-full">
+          <div className="bg-blue-500 h-screen">
+            <div className="flex w-[70%] h-full justify-center mx-auto border-x-12 border-t-12 border-blue-500 bg-white border-dashed">
+              <div className="p-8 min-w-0 w-full h-full">
                 <main>
                   <Routes>
                     <Route path="/" element={<Home />} />
