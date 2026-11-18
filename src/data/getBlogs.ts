@@ -7,7 +7,7 @@ export interface Blog {
   content: string
 }
 
-interface SanityPost {
+interface SanityBlogPost {
   id: string
   title?: string
   date?: string
@@ -21,7 +21,7 @@ const PROJECTION = `{
   content
 }`
 
-const toBlog = (post: SanityPost): Blog => ({
+const toBlog = (post: SanityBlogPost): Blog => ({
   id: post.id,
   title: post.title ?? 'Untitled',
   date: new Date(post.date ?? Date.now()),
@@ -29,14 +29,14 @@ const toBlog = (post: SanityPost): Blog => ({
 })
 
 export async function getBlogs(): Promise<Blog[]> {
-  const posts = await client.fetch<SanityPost[]>(
+  const posts = await client.fetch<SanityBlogPost[]>(
     `*[_type == "post" && defined(slug.current)] | order(date desc) ${PROJECTION}`
   )
   return posts.map(toBlog)
 }
 
 export async function getBlog(id: string): Promise<Blog | null> {
-  const post = await client.fetch<SanityPost | null>(
+  const post = await client.fetch<SanityBlogPost | null>(
     `*[_type == "post" && slug.current == $id][0] ${PROJECTION}`,
     {id}
   )

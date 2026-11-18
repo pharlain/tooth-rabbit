@@ -30,7 +30,7 @@ const Blog = () => {
                             h1: (props) => <h1 className="text-4xl font-bold" {...props} />,
                             h2: (props) => <h2 className="text-3xl font-bold" {...props} />,
                             h3: (props) => <h3 className="text-2xl font-bold" {...props} />,
-                            img: (props) => <img className="w-50 h-auto m-auto" {...props} />
+                            img: (props) => <img className="w-70 h-auto m-auto" {...props} />
                         }}>
                             {blog.content}
                         </ReactMarkdown>
