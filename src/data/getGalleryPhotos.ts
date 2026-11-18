@@ -15,9 +15,9 @@ export async function getPhotos(): Promise<Photo[]> {
 
   return photos.map((photo) => ({
     id: photo._id,
-    src: urlFor(photo.image).width(800).auto('format').quality(75).url(),
+    src: urlFor(photo.image).width(800).auto('format').quality(85).url(),
     srcSet: widths
-      .map((width) => `${urlFor(photo.image).width(width).auto('format').quality(75).url()} ${width}w`)
+      .map((width) => `${urlFor(photo.image).width(width).auto('format').quality(85).url()} ${width}w`)
       .join(', '),
   }))
 }
