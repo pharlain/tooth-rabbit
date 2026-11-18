@@ -10,7 +10,6 @@ const Home = () => {
           DIY Music Collective; and other abstractions
         </p>
         <br></br>
-        <br></br>
         <RandomPhoto />
       </div>
       <br></br>

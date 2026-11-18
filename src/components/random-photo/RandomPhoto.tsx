@@ -48,7 +48,7 @@ const AllPhotos = [
 const RandomPhoto = () => {
     return (
         <div className="flex w-full mx-auto text-center justify-center items-center">
-            <img width="75%" src={AllPhotos[GetRandomPhotoFromAssets()]} alt="Random Photo" />
+            <img width="60%" src={AllPhotos[GetRandomPhotoFromAssets()]} alt="Random Photo" />
         </div>
     );
 };
