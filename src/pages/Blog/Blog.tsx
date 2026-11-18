@@ -1,12 +1,26 @@
+import { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import PageHeader from '../../components/page-header/PageHeader';
-import blogs from '../../data/loadBlogs';
+import { getBlogs, type Blog as BlogType } from '../../data/getBlogs';
 
 const Blog = () => {
+    const [blogs, setBlogs] = useState<BlogType[]>([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(false);
+
+    useEffect(() => {
+        getBlogs()
+            .then(setBlogs)
+            .catch(() => setError(true))
+            .finally(() => setLoading(false));
+    }, []);
+
     return (
         <>
             <PageHeader title="Blog" />
             <div className="w-full min-w-0 mx-auto">
+                {loading && <p>Loading…</p>}
+                {error && <p>Couldn't load posts.</p>}
                 {blogs.map((blog) => (
                     <div key={blog.id}>
                         <p>{blog.date.toLocaleDateString()}</p>
